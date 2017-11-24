@@ -6,6 +6,18 @@ Then("deberia ver el titulo {string}") do |titulo|
   response_body.should =~ Regexp.new(Regexp.escape(titulo))
 end
 
-Then("el boton {string}") do |jugar|
+Then("ver el boton {string}") do |jugar|
   response_body.should =~ Regexp.new(Regexp.escape(jugar))
+end
+
+Given("preciono el boton {string}") do |jugar|
+  click_button(jugar)
+end
+
+Then("deberia visitar la pagina del juego {string}") do |url|
+  visit(url)
+end
+
+Then("ver el boton para lanzar flecha {string}") do |disparar|
+  response_body.should =~ Regexp.new(Regexp.escape(disparar))
 end
