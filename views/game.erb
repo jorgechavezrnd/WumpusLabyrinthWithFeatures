@@ -1,1 +1,66 @@
-<button>Lanzar Flecha</button>
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <title>Gameboy in HTML/CSS</title>
+        <link rel="stylesheet" href="/vendor/css/styleGameboy.css">
+    </head>
+    <body>
+        <div class="gameboy">
+            <div class="top-border"></div>
+            <div class="top-border_left"></div>
+            <div class="top-border_circle">
+                <p>OFF - ON</p>
+            </div>
+            <div class="vertical-rectangle_1"></div>
+            <div class="vertical-rectangle_2"></div>
+            <div class="vertical-rectangle_3"></div>
+            <div class="top-border_right"></div>
+            <div class="screen-wrapper">
+                <div class="screen-tagline">
+                    <p>WUMPUS LABYRINTH</p>
+                </div>
+                <div class="horizontal-line_left-purple"></div>
+                <div class="horizontal-line_left-blue"></div>
+                <div class="horizontal-line_right-purple"></div>
+                <div class="horizontal-line_right-blue"></div>
+                <div class="battery-circle"></div>
+                <div class="battery-sign">BATTERY</div>
+                <div class="screen"></div>
+            </div>
+            <div class="button-a"></div>
+            <div class="button-b"></div>
+            <div class="button-cross_horizontal"></div>
+            <div class="button-cross_vertical">
+                <div class="button-cross_circle"></div>
+                <button class="button-cross_circle_north"></button>
+                <button class="button-cross_circle_south"></button>
+                <button class="button-cross_circle_east"></button>
+                <button class="button-cross_circle_west"></button>
+            </div>
+            <div class="restart-button">
+                <p>REINICIAR</p>
+            </div>
+            <form method="get" action="/restart">
+                <button type="submit" class="restart-button"></button>
+            </form>
+            <div class="exit-button">
+                <p>SALIR</p>
+            </div>
+            <form method="get" action="/">
+                <button type="submit" class="exit-button"></button>
+            </form>
+            <div class="vent-wrapper">
+                <div class="vent"></div>
+                <div class="vent"></div>
+                <div class="vent"></div>
+                <div class="vent"></div>
+                <div class="vent"></div>
+                <div class="vent"></div>
+            </div>
+        </div>
+        <div class="description-wrapper">
+            <p><a href="https://twitter.com/GJShepard" target="_blank">@GJShepard</a></p>
+        </div> 
+    </body>
+</html>
