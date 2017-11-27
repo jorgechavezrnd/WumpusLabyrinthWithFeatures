@@ -18,6 +18,6 @@ Then("deberia visitar la pagina del juego {string}") do |url|
   visit(url)
 end
 
-Then("ver el boton para lanzar flecha {string}") do |disparar|
-  response_body.should =~ Regexp.new(Regexp.escape(disparar))
+Then("ver el boton para salir {string}") do |salir|
+  response_body.should =~ Regexp.new(Regexp.escape(salir))
 end
